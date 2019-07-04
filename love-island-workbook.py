@@ -18,8 +18,8 @@ import matplotlib.pyplot as plt
 
 # Read CSV file from local directory
 data = pd.read_csv('love-island-historical-dataset.csv')
-data.tail()
-#data.head()
+#data.tail()
+data.head()
 
 
 # In[ ]:
@@ -44,7 +44,10 @@ print("Columns within the dataset: ", columns)
 
 # Select and filter your data frame to view different values. Below we are filtering the dataframe where the OUTCOME field is equal to 'WINNER'
 winners = data[data['OUTCOME'].values == 'WINNER']
-winners.style
+#if running in notebooks:
+# winners.style
+#if running in IDE terminal:
+print(winners)
 
 
 # In[ ]:
@@ -69,6 +72,8 @@ winners.style
 #Simple Box Plot showing the spread of ages of contestants in the villa
 ages = data['Age']
 plt.boxplot(ages)
+plt.show()
+#if running in interactive IDE you do not need plt.show()
 
 
 # In[ ]:
@@ -94,6 +99,8 @@ ax2 = fig.add_subplot(222)
 ax2.violinplot(ages_2017, showmedians = True)
 plt.xticks([1], ['2017'])
 plt.title('Distribution of Ages for Love Island 2017')
+
+plt.show()
 
 # Let work through this together ...
 # Can we add a 3rd Violin plot for age distribution of Love Island 2016 contestants
@@ -128,6 +135,8 @@ ax3.barh(year2016['Contestant Name'], year2016['NUMBER OF DAYS IN VILLA'],height
 plt.title('Love Island 2016 - Contestants by number of days in the villa')
 plt.legend()
 
+plt.show()
+
 
 # In[ ]:
 
@@ -144,7 +153,7 @@ colours = ['deeppink', 'aqua', 'magenta', 'silver', 'lime', 'yellow']
 explode = (0.2,0,0, 0,0, 0)
 
 plt.pie(areaofuk, labels = areaofuk.index, colors = colours, explode=explode, autopct='%.0f', startangle=90)
-
+plt.show()
 
 # In[ ]:
 
@@ -254,6 +263,7 @@ ax4.scatter(x5,y6, color='magenta', marker='d', linewidths = '3')
 plt.xlabel("Number of days in Villa")
 plt.ylabel("Number of times pied")
 plt.title('Number of days in villa by number of dates')
+plt.show()
 
 
 # In[ ]:
@@ -308,6 +318,7 @@ ax2.barh(year2017['Contestant Name'], year2017['NUMBER OF DAYS IN VILLA'],height
 plt.xlabel("No. of days in the villa")
 plt.ylabel("Contestant Name")
 plt.title('No. of days Casa Amor contestant additions were in the villa - 2017')
+plt.show()
 
 
 # In[ ]:
@@ -340,4 +351,6 @@ plt.xlabel('Buckets of Number of days Casa Amor additions stayed in the villa')
 plt.ylabel('Number of contestants that lasted that many days')
 plt.title('The number of days 2018 Casa Amor contestants have stayed in the Villa')
 ax3.yaxis.tick_right()
+
+plt.show()
 
