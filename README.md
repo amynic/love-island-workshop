@@ -14,6 +14,14 @@ This file contains pre-populated code to walk through and sections where you can
 
 Feel free to add and run your own code within this file - this is your workbook space to try out what your learning about Data Visualisation
 
+## If Running in Azure Notebooks
+
+## If Running using Jupyter Locally
+
+## If Running using VS Code
+
+## If Running using Spyder
+
 
 > If you are stuck feel free to look at the **love-island-completed-code** or **love-island-completed-notebook** files to see how I have solved the problem
 
