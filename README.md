@@ -8,7 +8,7 @@ This workshop uses a personally collected Love Island TV series dataset about co
 
 # Python Data Visualisation
 
-Open the **love-island-workbook** file (.py if you are running in an IDE or .ipynb if you are running in a Jupyter Notebook environment).
+Open the **love-island-workbook** file (.py if you are running in an IDE or .ipynb if you are running in a Jupyter Notebook environment) from the 'data vizualisation folder'.
 
 This file contains pre-populated code to walk through and sections where you can write your own code and solve the challenges
 
@@ -45,7 +45,7 @@ Feel free to add and run your own code within this file - this is your workbook 
 ## If Running using Spyder
 
 
-> If you are stuck feel free to look at the **love-island-completed-code** or **love-island-completed-notebook** files to see how I have solved the problem
+> If you are stuck feel free to look at the **love-island-completed-code** or **love-island-completed-notebook** files to see how I have solved the problem from the 'data vizualisation'
 
 
 # Calling Machine Learning Web APIs
@@ -80,6 +80,6 @@ In the Cognitive Services page, select **Keys** and copy **KEY 1**
 Now select **Overview** in the left hand pane and copy the **Endpoint** variable
 ![Copy Endpoint](/docs-images/endpoint.JPG)
 
-Once you have noted down your key and your endpoint - open the 'love-island-text-analytics.py' or 'love-island-text-analytics.ipynb' in your favourite IDE
+Once you have noted down your key and your endpoint - open the 'love-island-text-analytics.py' or 'love-island-text-analytics.ipynb' in your favourite IDE from the 'web apis' folder
 
 Follow the instructions in the 2nd workbook to learn how to analyse a Love Island Tweet for sentiment and key phrases.
