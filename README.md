@@ -49,3 +49,37 @@ Feel free to add and run your own code within this file - this is your workbook 
 
 
 # Calling Machine Learning Web APIs
+
+In this part of the workshop we are going to see how calling web APIs can help us expand the information we have in Python
+
+> At this point we will sign up for Azure
+
+First log into [Microsoft Azure](https://azure.microsoft.com/en-gb/?WT.mc_id=ainights-github-amynic) and choose **Portal** in the top right corner.
+
+Once in the portal select **Create a resource** and search **Cognitive Services** and choose Enter. Then select **Create** on the Cognitive Services blade
+
+![Create Cognitive Services Account](/docs-images/cognitive-azure.JPG)
+
+Enter details to create an account:
+* **Name:** enter a suitable name for the service (example: pythonwebapi)
+* **Subscription:** Choose your subscription
+* **Location:** Choose your closest Data Center available (example: North Europe)
+* **Pricing Tier:** S0 or F0
+* **Resource Group:** Select 'Create new', and provide a sensible name (example pythonworkshop)
+* **select the checkbox after reading the terms below**
+* **select 'Create'**
+
+![Cognitive Services Details](/docs-images/cognitive-details.JPG)
+
+Once created, in your notifications (top right corner) select **go to resource**
+![Go to Resource](/docs-images/go-to-resource.JPG)
+
+In the Cognitive Services page, select **Keys** and copy **KEY 1**
+![Copy Key](/docs-images/keys.JPG)
+
+Now select **Overview** in the left hand pane and copy the **Endpoint** variable
+![Copy Endpoint](/docs-images/endpoint.JPG)
+
+Once you have noted down your key and your endpoint - open the 'love-island-text-analytics.py' or 'love-island-text-analytics.ipynb' in your favourite IDE
+
+Follow the instructions in the 2nd workbook to learn how to analyse a Love Island Tweet for sentiment and key phrases.
