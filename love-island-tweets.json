@@ -1,0 +1,22 @@
+documents = [
+    {
+      "id": "1", 
+      "language": "en", 
+      "text": "I like lucie n all but I love Amy she is just new to everything people need to stop judging #loveisland"
+    },
+    {
+      "id": "2", 
+      "language": "en", 
+      "text": "But Amy doesn't deserve Curtis #loveisland"
+    },  
+    {
+      "id": "3", 
+      "language": "es", 
+      "text": "Really hope Arrabella gets a new bit in casa amor just purely for my own entertainment and the look on Danny's face #Loveisland"
+    },  
+    {
+      "id": "4", 
+      "language": "it", 
+      "text": "can we just vote out Danny and Arrabella already pls????? nobody is interested in seeing snakes in the villa @LoveIsland #LoveIsland"
+    }
+  ]
