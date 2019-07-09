@@ -1,21 +1,19 @@
 # Love Island Tweet Analysis Workbook
 
-# First run a pip install command to get a package that will help us query the Azure Text Analytics API
-
-get_ipython().system(u'pip install --upgrade azure-cognitiveservices-language-textanalytics')
-
+# [TODO] First run a pip install command to get a package that will help us query the Azure Text Analytics API
+# pip install --upgrade azure-cognitiveservices-language-textanalytics
 
 # import packages needed
 from azure.cognitiveservices.language.textanalytics import TextAnalyticsClient
 from msrest.authentication import CognitiveServicesCredentials
 
 
-# enter your subscription key below
+# enter your subscription key below from the Azure portal
 subscription_key = "<ENTER KEY>"
 credentials = CognitiveServicesCredentials(subscription_key)
 
 
-# Enter datacenter location
+# Enter datacenter location from the endpoint listed in the Azure Portal e.g. northeurope
 text_analytics_url = "https://<ENTER LOCATION>.api.cognitive.microsoft.com/"
 text_analytics = TextAnalyticsClient(endpoint=text_analytics_url, credentials=credentials)
 
@@ -47,6 +45,7 @@ documents = [
 
 # Call the web API and loop through each document returned in the JSON response to get the results and the sentiment score
 # Sentiment: Positive = closer to 1, Negative = closer to 0
+# Review the outcome and are they evaluted as positive or negative?
 response = text_analytics.sentiment(documents=documents)
 for document in response.documents:
      print("Document Id: ", document.id, ", Sentiment Score: ", "{:.2f}".format(document.score))
@@ -54,7 +53,7 @@ for document in response.documents:
 
 
 # Call the web API and loop through each document returned in the JSON response to get the results and the sentiment score
-# Kay Phrase: return key words in the sentence
+# Key Phrase: return key words in the sentence
 response = text_analytics.key_phrases(documents=documents)
 
 for document in response.documents:
