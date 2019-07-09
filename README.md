@@ -1,4 +1,4 @@
-# love-island-workshop
+# Love Island Workshop
 A repository containing all resources to learn about Python Data Visualisation and calling Machine Learning APIs (Text Analytics)
 
 This workshop uses a personally collected Love Island TV series dataset about contestants from 2016 - 2019. Also some tweets collected during the show we can analyse.
