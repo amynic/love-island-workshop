@@ -25,7 +25,7 @@ This file contains pre-populated code to walk through step-by-step and understan
 
 Feel free to add and run your own code within this file - this is your workbook space to try out what your learning about Data Visualisation
 
-## If Running in Azure Notebooks [RECOMMENDED]
+## If Running in [Azure Notebooks](https://notebooks.azure.com/) [RECOMMENDED]
 
 * Log into Azure Notebooks ([https://notebooks.azure.com/](https://notebooks.azure.com/)) using a Microsoft account **(email address such as hotmail, live, yahoo, Gmail etc)** and your password for that account
 ![Sign In](docs-images/signin.JPG)
@@ -43,7 +43,7 @@ Feel free to add and run your own code within this file - this is your workbook 
 * Click the 'love-island-workshop.ipynb' file to open
 * run the notebook using control SHIFT + ENTER on each notebook cell
 
-## If Running using Jupyter Locally
+## If Running using [Jupyter](https://jupyter.org/) Locally
 
 * Create a folder on your machine with the resources downloaded using the Green button at the top of this repository
 ![Download Repo](docs-images/repo.JPG)
@@ -55,7 +55,7 @@ Feel free to add and run your own code within this file - this is your workbook 
 * run the notebook using control SHIFT + ENTER
 
 
-## If Running using VS Code
+## If Running using [Visual Studio Code](https://code.visualstudio.com/)
 
 *  Create a folder on your machine with the resources downloaded using the Green button at the top of this repository
 ![Download Repo](docs-images/repo.JPG)
@@ -64,7 +64,7 @@ Feel free to add and run your own code within this file - this is your workbook 
 * Double click the 'love-island-workbook.py' file to open it
 * Once open to run the code choose SHIFT + ENTER or select a set of line of code, right click and run selected lines in Terminal
 
-## If Running using Spyder
+## If Running using [Spyder](https://docs.spyder-ide.org/)
 
 * Create a folder on your machine with the resources downloaded using the Green button at the top of this repository
 ![Download Repo](docs-images/repo.JPG)
