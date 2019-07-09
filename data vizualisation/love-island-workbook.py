@@ -239,13 +239,13 @@ year2017 = daysinvilla[daysinvilla['love-island-series'].values == 2017].sort_va
 fig = plt.figure(figsize =(20,20))
 
 ax1 = fig.add_subplot(221)
-ax1.barh(year2018['Contestant Name'], year2018['NUMBER OF DAYS IN VILLA'],height= 0.8, facecolor = 'magenta')
+ax1.barh(range(len(year2018['Contestant Name'])), year2018['NUMBER OF DAYS IN VILLA'],height= 0.8, facecolor = 'magenta', tick_label = year2018['Contestant Name'])
 plt.xlabel("No. of days in the villa")
 plt.ylabel("Contestant Name")
 plt.title('No. of days Casa Amor contestant additions were in the villa - 2018')
 
 ax2 = fig.add_subplot(222)
-ax2.barh(year2017['Contestant Name'], year2017['NUMBER OF DAYS IN VILLA'],height= 0.8, facecolor = 'lime')
+ax2.barh(range(len(year2017['Contestant Name'])), year2017['NUMBER OF DAYS IN VILLA'],height= 0.8, facecolor = 'lime', tick_label = year2017['Contestant Name'])
 plt.xlabel("No. of days in the villa")
 plt.ylabel("Contestant Name")
 plt.title('No. of days Casa Amor contestant additions were in the villa - 2017')
