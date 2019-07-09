@@ -14,18 +14,28 @@ This file contains pre-populated code to walk through and sections where you can
 
 Feel free to add and run your own code within this file - this is your workbook space to try out what your learning about Data Visualisation
 
-## If Running in Azure Notebooks
+## If Running in Azure Notebooks [RECOMMENDED]
 
-* Log into Azure Notebooks using an Azure Subscription
-* Create new project from Github Repository
-* Clone the repository using the URL within the Green Button at the top of this repository and view the files
+* Log into Azure Notebooks ([https://notebooks.azure.com/](https://notebooks.azure.com/)) using a Microsoft account **(email address such as hotmail, live, yahoo, Gmail etc)** and your password for that account
+![Sign In](docs-images/signin.JPG)
+* Allow access to the service by selecting yes
+![Allow Access](docs-images/access.JPG)
+* Create a user id - for example your alias (e.g amyboyd)
+![Create UserID](docs-images/userid.JPG)
+* Click 'My Projects' in the top left
+* Create a new project from Github Repository by using the button below
+![Upload from Github](docs-images/upload-github-repo.JPG)
+* Clone the repository using the URL within the Green Button at the top of this repository
+![Repo URL](docs-images/github-link.JPG)
 * Choose 'Run on Free Compute' and view the directory open in a Jupyter Interface 
+![Repo URL](docs-images/repo.JPG)
 * Click the 'love-island-workshop.ipynb' file to open
-* run the notebook using control SHIFT + ENTER
+* run the notebook using control SHIFT + ENTER on each notebook cell
 
 ## If Running using Jupyter Locally
 
 * Create a folder on your machine with the resources downloaded using the Green button at the top of this repository
+![Download Repo](docs-images/repo.JPG)
 * Run 'Jupyter' program on your local machine
 * wait for the Jupyter server to start within the command line
 * A web browser window should open with your documents
@@ -37,13 +47,21 @@ Feel free to add and run your own code within this file - this is your workbook 
 ## If Running using VS Code
 
 *  Create a folder on your machine with the resources downloaded using the Green button at the top of this repository
+![Download Repo](docs-images/repo.JPG)
 * Open Visual Studio Code and install the Python extension by Microsoft from the Extensions tab on the left
 * Open the folder containing the code using File -> Open
 * Double click the 'love-island-workbook.py' file to open it
-* Once open to run the code choose SHIFT + ENTER or select a set of line of code, right click and run seleted lines in Terminal
+* Once open to run the code choose SHIFT + ENTER or select a set of line of code, right click and run selected lines in Terminal
 
 ## If Running using Spyder
 
+* Create a folder on your machine with the resources downloaded using the Green button at the top of this repository
+![Download Repo](docs-images/repo.JPG)
+* Open Spyder software
+* File -> Open and navigate to the folder you just downloaded
+* Open the Data Visualisation folder and select the 'love-island-workbook.py'
+* Select small lines of code to run and select the 'Run Current Cell' button or SHIFT + ENTER
+![Run selected lines of code](docs-images/spyder-run-icon.JPG)
 
 > If you are stuck feel free to look at the **love-island-completed-code** or **love-island-completed-notebook** files to see how I have solved the problem from the 'data vizualisation'
 
@@ -80,6 +98,6 @@ In the Cognitive Services page, select **Keys** and copy **KEY 1**
 Now select **Overview** in the left hand pane and copy the **Endpoint** variable
 ![Copy Endpoint](/docs-images/endpoint.JPG)
 
-Once you have noted down your key and your endpoint - open the 'love-island-text-analytics.py' or 'love-island-text-analytics.ipynb' in your favourite IDE from the 'web apis' folder
+Once you have noted down your **key** and your **endpoint** - open the 'love-island-text-analytics.py' or 'love-island-text-analytics.ipynb' in your favourite IDE from the 'web apis' folder
 
 Follow the instructions in the 2nd workbook to learn how to analyse a Love Island Tweet for sentiment and key phrases.
