@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 
 # Read CSV file from local directory
-data = pd.read_csv('love-island-historical-dataset.csv')
+data = pd.read_csv(r'<enter the path of your code folder here>\love-island-historical-dataset.csv')
 #data.tail()
 data.head()
 
