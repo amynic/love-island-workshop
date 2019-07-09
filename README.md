@@ -10,7 +10,14 @@ This workshop uses a personally collected Love Island TV series dataset about co
 
 Open the **love-island-workbook** file (.py if you are running in an IDE or .ipynb if you are running in a Jupyter Notebook environment) from the 'data vizualisation folder'.
 
-This file contains pre-populated code to walk through and sections where you can write your own code and solve the challenges
+This file contains pre-populated code to walk through step-by-step and understand and sections where you can write your own code and solve the challenges:
+
+1. Can you filter the 'data' data frame where the OUTCOME field is equal to 'RUNNER UP'
+2. Can you filter the 'data' data frame where the OUTCOME field is equal to 'THIRD PLACE'
+3. Can we add a 3rd Violin plot for age distribution of Love Island 2016 contestants
+4. Can you print the value counts of where the love island contestants live in the UK
+5. Can you change the colours of the pie chart? - colours which are available available: [https://matplotlib.org/1.2.1/api/colors_api.html](https://matplotlib.org/1.2.1/api/colors_api.html)
+6. Create your own scatter plot using the variables X1 - X6 and Y1 - Y10 to find correlations between variables
 
 Feel free to add and run your own code within this file - this is your workbook space to try out what your learning about Data Visualisation
 
