@@ -82,17 +82,17 @@ year2016 = daysinvilla[daysinvilla['love-island-series'].values == 2016].sort_va
 fig = plt.figure(figsize =(20,20))
 
 ax1 = fig.add_subplot(221)
-ax1.barh(year2018['Contestant Name'], year2018['NUMBER OF DAYS IN VILLA'],height= 0.8, color = 'magenta', label = '2018')
+ax1.barh(range(len(year2018['Contestant Name'])), year2018['NUMBER OF DAYS IN VILLA'],height= 0.8, color = 'magenta', label = '2018', tick_label=year2018['Contestant Name'])
 plt.title('Love Island 2018 - Contestants by number of days in the villa')
 plt.legend()
 
 ax2 = fig.add_subplot(222)
-ax2.barh(year2017['Contestant Name'], year2017['NUMBER OF DAYS IN VILLA'],height= 0.8, color = 'blue', label = '2017')
+ax2.barh(range(len(year2017['Contestant Name'])), year2017['NUMBER OF DAYS IN VILLA'],height= 0.8, color = 'blue', label = '2017', tick_label=year2017['Contestant Name'])
 plt.title('Love Island 2017 - Contestants by number of days in the villa')
 plt.legend()
 
 ax3 = fig.add_subplot(223)
-ax3.barh(year2016['Contestant Name'], year2016['NUMBER OF DAYS IN VILLA'],height= 0.8, color = 'lawngreen', label = '2016')
+ax3.barh(range(len(year2016['Contestant Name'])), year2016['NUMBER OF DAYS IN VILLA'],height= 0.8, color = 'lawngreen', label = '2016', tick_label=year2016['Contestant Name'])
 plt.title('Love Island 2016 - Contestants by number of days in the villa')
 plt.legend()
 
