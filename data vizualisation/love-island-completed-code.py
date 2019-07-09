@@ -1,30 +1,14 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 #Import packages
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-# In[ ]:
-
-
 # Read CSV file
 data = pd.read_csv('love-island-historical-dataset.csv')
 data.tail()
 
-
-# In[ ]:
-
-
 data.describe()
-
-
-# In[ ]:
 
 
 shape = data.shape
@@ -33,38 +17,23 @@ print("Shape of the data: ", shape)
 print("Columns within the dataset: ", columns)
 
 
-# In[ ]:
-
 
 winners = data[data['OUTCOME'].values == 'WINNER']
 winners.style
 
-
-# In[ ]:
-
-
 winners = data[data['OUTCOME'].values == 'RUNNER UP']
 winners.style
-
-
-# In[ ]:
 
 
 winners = data[data['OUTCOME'].values == 'THIRD PLACE']
 winners.style
 
 
-# # Graphs
-
-# In[ ]:
-
+# Graphs
 
 #simple histogram
 ages = data['Age']
 plt.boxplot(ages)
-
-
-# In[ ]:
 
 
 # Split data by love island series
@@ -94,9 +63,6 @@ plt.xticks([1], ['2016'])
 plt.title('Distribution of Ages for Love Island 2016')
 
 
-# In[ ]:
-
-
 # main dataset
 daysinvilla = data[['Contestant Name','NUMBER OF DAYS IN VILLA', 'love-island-series', 'First Group to enter villa']]
 
@@ -123,10 +89,6 @@ ax3.barh(year2016['Contestant Name'], year2016['NUMBER OF DAYS IN VILLA'],height
 plt.title('Love Island 2016 - Contestants by number of days in the villa')
 plt.legend()
 
-
-# In[ ]:
-
-
 # simple pie charts
 areaofuk = data['Area of UK'].value_counts()
 destination = data['From'].value_counts()
@@ -143,10 +105,6 @@ ax1.pie(areaofuk, labels = areaofuk.index, colors = colours, explode=explode, au
 ax2 = fig.add_subplot(222)
 ax2.pie(destination, labels = destination.index, colors = colours, autopct='%.2f', startangle=90)
 #plt.axis('equal')
-
-
-
-# In[ ]:
 
 
 # % chance given historical data
@@ -173,10 +131,6 @@ print('Percentage of poeple who won/runner up and were part of the first group t
 percent_first_villa_inc_thirdplace = ((len(first_villa_and_winner)+len(first_villa_and_runnerup)+len(first_villa_and_thirdplace))/(len(winner)+len(runnerup)+len(thirdplace)))*100
 print('Percentage of poeple who won/runner up/third place and were part of the first group to enter the villa: ' + str(percent_first_villa_inc_thirdplace) + '%')
 
-
-# In[ ]:
-
-
 #Scatter Plot - day joined villa / no of couple
 x1 = data['Day Joined Villa']
 y1 = data['Number of Couples']
@@ -194,10 +148,6 @@ y6 = data_2018['Number of dates']
 y7 = data_2018['Number of Bust Ups']
 
 
-
-# In[ ]:
-
-
 plt.figure(figsize=(10,10))
 plt.scatter(x1,y1, color='magenta', marker='d', linewidths = '3')
 plt.xlabel("Day entered the Villa")
@@ -205,19 +155,12 @@ plt.ylabel("Number of couples")
 plt.title('Day Contestant Joined the Villa by Number of Couples they had - trending down')
 plt.show()
 
-
-# In[ ]:
-
-
 plt.figure(figsize=(10,10))
 plt.scatter(x2,y1, color='cyan', marker='d', linewidths = '3')
 plt.xlabel("Age")
 plt.ylabel("Number of couples")
 plt.title('A graph to show how age relates to Number of couples across the show')#
 plt.show()
-
-
-# In[ ]:
 
 
 plt.figure(figsize=(10,10))
@@ -228,18 +171,12 @@ plt.title('No correlation shown between leaving the villa and age')
 plt.show()
 
 
-# In[ ]:
-
-
 plt.figure(figsize=(10,10))
 plt.scatter(x5,y6, color='magenta', marker='d', linewidths = '3')
 plt.xlabel("Number of days in Villa")
 plt.ylabel("Number of times pied")
 #plt.title('No correlation shown between leaving the villa and age')
 plt.show()
-
-
-# In[ ]:
 
 
 fig = plt.figure(figsize =(20,20))
@@ -269,10 +206,7 @@ plt.ylabel("Number of times pied")
 plt.title('Number of days in villa by number of dates')
 
 
-# In[ ]:
-
-
-##CASA AMOR EXPLORATORY ANALYSIS
+# CASA AMOR EXPLORATORY ANALYSIS
 
 casa_amor = data[data['Casa Amor addition'].values == 'YES']
 #print(casa_amor)
@@ -289,15 +223,7 @@ other = (counts[1] / total) * 100
 print('Percentage of contestants who were dumped from the island: '+ str(round(dumped,2)) + '%')
 print('Percentage of contestants who placed well on Love Island: '+ str(round(other,2)) + '%')
 
-
-# In[ ]:
-
-
 print(casa_amor)
-
-
-# In[ ]:
-
 
 # main dataset
 daysinvilla = casa_amor[['Contestant Name','NUMBER OF DAYS IN VILLA', 'love-island-series']]
@@ -321,10 +247,6 @@ ax2.barh(year2017['Contestant Name'], year2017['NUMBER OF DAYS IN VILLA'],height
 plt.xlabel("No. of days in the villa")
 plt.ylabel("Contestant Name")
 plt.title('No. of days Casa Amor contestant additions were in the villa - 2017')
-
-
-# In[ ]:
-
 
 #Histogram of Casa Amor additions and how long they stay in the villa
 days = daysinvilla['NUMBER OF DAYS IN VILLA']
