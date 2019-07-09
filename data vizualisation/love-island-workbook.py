@@ -1,19 +1,10 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Love Island Data Visualisation Workbook
+# Love Island Data Visualisation Workbook
 
 # First load in the packages needed to run this code
-
-# In[ ]:
-
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
-
-# In[ ]:
 
 
 # Read CSV file from local directory
@@ -21,26 +12,14 @@ data = pd.read_csv('love-island-historical-dataset.csv')
 #data.tail()
 data.head()
 
-
-# In[ ]:
-
-
 # The describe() function shows you counts, max, min etc values of what is in your dataset 
 data.describe()
-
-
-# In[ ]:
-
 
 # Look at the shape/size of the data, as well as the columns used in the Pandas DataFrame structure
 shape = data.shape
 columns = data.columns.tolist()
 print("Shape of the data: ", shape)
 print("Columns within the dataset: ", columns)
-
-
-# In[ ]:
-
 
 # Select and filter your data frame to view different values. Below we are filtering the dataframe where the OUTCOME field is equal to 'WINNER'
 winners = data[data['OUTCOME'].values == 'WINNER']
@@ -49,35 +28,21 @@ winners = data[data['OUTCOME'].values == 'WINNER']
 #if running in IDE terminal:
 print(winners)
 
-
-# In[ ]:
-
-
 # Can you filter the dataframe where the OUTCOME field is equal to 'RUNNER UP'
-# Add your code here ...
-
-
-# In[ ]:
+# <<Add your code here>>
 
 
 # Can you filter the dataframe where the OUTCOME field is equal to 'THIRD PLACE'
-# Add your code here ...
+# <<Add your code here>>
 
 
-# # Graphs
-
-# In[ ]:
-
+# Graphs
 
 #Simple Box Plot showing the spread of ages of contestants in the villa
 ages = data['Age']
 plt.boxplot(ages)
 plt.show()
-#if running in interactive IDE you do not need plt.show()
-
-
-# In[ ]:
-
+#if running in interactive IDE (such as notebooks) you do not need plt.show()
 
 # Split data by love island series
 year2018 = data[data['love-island-series'].values == 2018]
@@ -102,12 +67,8 @@ plt.title('Distribution of Ages for Love Island 2017')
 
 plt.show()
 
-# Let work through this together ...
+# Lets work through this together ...
 # Can we add a 3rd Violin plot for age distribution of Love Island 2016 contestants
-
-
-# In[ ]:
-
 
 # main dataset
 daysinvilla = data[['Contestant Name','NUMBER OF DAYS IN VILLA', 'love-island-series', 'First Group to enter villa']]
@@ -137,10 +98,6 @@ plt.legend()
 
 plt.show()
 
-
-# In[ ]:
-
-
 # simple pie charts
 areaofuk = data['Area of UK'].value_counts()
 
@@ -154,9 +111,6 @@ explode = (0.2,0,0, 0,0, 0)
 
 plt.pie(areaofuk, labels = areaofuk.index, colors = colours, explode=explode, autopct='%.0f', startangle=90)
 plt.show()
-
-# In[ ]:
-
 
 # % chance given historical data
 first_to_enter_villa = len(data['First Group to enter villa'])
@@ -182,10 +136,6 @@ print('Percentage of poeple who won/runner up and were part of the first group t
 percent_first_villa_inc_thirdplace = ((len(first_villa_and_winner)+len(first_villa_and_runnerup)+len(first_villa_and_thirdplace))/(len(winner)+len(runnerup)+len(thirdplace)))*100
 print('Percentage of poeple who won/runner up/third place and were part of the first group to enter the villa: ' + str(percent_first_villa_inc_thirdplace) + '%')
 
-
-# In[ ]:
-
-
 #Creating variables from the dataframe to create scatter plots to see correlations between variables
 x1 = data['Day Joined Villa']
 y1 = data['Number of Couples']
@@ -207,9 +157,6 @@ y9 = data_2017['Number of dates']
 y10 = data_2017['Number of Bust Ups']
 
 
-# In[ ]:
-
-
 #Example Scatter plot of:
 # x axis: Day contestant entered the villa
 # y-axis: Number of couples they were in
@@ -222,9 +169,6 @@ plt.title('Day Contestant Joined the Villa by Number of Couples they had - trend
 plt.show()
 
 
-# In[ ]:
-
-
 # Create your own scatter plots using the variables above to find correlations between variables
 plt.figure(figsize=(10,10))
 plt.scatter(<ENTER X AXIS HERE>,<ENTER Y AXIS HERE>, color='cyan', marker='d', linewidths = '3')
@@ -232,9 +176,6 @@ plt.xlabel("Enter X axis label here")
 plt.ylabel("Enter Y axis label here")
 plt.title('Enter graph title here')
 plt.show()
-
-
-# In[ ]:
 
 
 # Here is an example of adding all the graphs onto one figure/chart space
@@ -266,10 +207,7 @@ plt.title('Number of days in villa by number of dates')
 plt.show()
 
 
-# In[ ]:
-
-
-##CASA AMOR EXPLORATORY ANALYSIS
+#CASA AMOR EXPLORATORY ANALYSIS
 
 casa_amor = data[data['Casa Amor addition'].values == 'YES']
 #print(casa_amor)
@@ -287,14 +225,7 @@ print('Percentage of contestants who were dumped from the island: '+ str(round(d
 print('Percentage of contestants who placed well on Love Island: '+ str(round(other,2)) + '%')
 
 
-# In[ ]:
-
-
 print(casa_amor)
-
-
-# In[ ]:
-
 
 # main dataset
 daysinvilla = casa_amor[['Contestant Name','NUMBER OF DAYS IN VILLA', 'love-island-series']]
@@ -319,9 +250,6 @@ plt.xlabel("No. of days in the villa")
 plt.ylabel("Contestant Name")
 plt.title('No. of days Casa Amor contestant additions were in the villa - 2017')
 plt.show()
-
-
-# In[ ]:
 
 
 #Histogram of Casa Amor additions and how long they stay in the villa
