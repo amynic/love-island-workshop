@@ -25,9 +25,9 @@ This file contains pre-populated code to walk through step-by-step and understan
 
 Feel free to add and run your own code within this file - this is your workbook space to try out what your learning about Data Visualisation
 
-## If Running in [Azure Notebooks](https://notebooks.azure.com/) [RECOMMENDED]
+## If Running in [Azure Notebooks](https://notebooks.azure.com/?WT.mc_id=aiml-0000-amynic) [RECOMMENDED]
 
-* Log into Azure Notebooks ([https://notebooks.azure.com/](https://notebooks.azure.com/)) using a Microsoft account **(email address such as hotmail, live, yahoo, Gmail etc)** and your password for that account
+* Log into Azure Notebooks ([https://notebooks.azure.com/?WT.mc_id=aiml-0000-amynic](https://notebooks.azure.com/?WT.mc_id=aiml-0000-amynic)) using a Microsoft account **(email address such as hotmail, live, yahoo, Gmail etc)** and your password for that account
 ![Sign In](docs-images/signin.JPG)
 * Allow access to the service by selecting yes
 ![Allow Access](docs-images/access.JPG)
@@ -55,7 +55,7 @@ Feel free to add and run your own code within this file - this is your workbook 
 * run the notebook using control SHIFT + ENTER
 
 
-## If Running using [Visual Studio Code](https://code.visualstudio.com/)
+## If Running using [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=aiml-0000-amynic)
 
 *  Create a folder on your machine with the resources downloaded using the Green button at the top of this repository
 ![Download Repo](docs-images/repo.JPG)
@@ -83,7 +83,7 @@ In this part of the workshop we are going to see how calling web APIs can help u
 
 > At this point we will sign up for Azure
 
-First log into [Microsoft Azure](https://azure.microsoft.com/en-gb/?WT.mc_id=ainights-github-amynic) and choose **Portal** in the top right corner.
+First log into [Microsoft Azure](https://azure.microsoft.com/?WT.mc_id=aiml-0000-amynic) and choose **Portal** in the top right corner.
 
 Once in the portal select **Create a resource** and search **Cognitive Services** and choose Enter. Then select **Create** on the Cognitive Services blade
 
